@@ -41,7 +41,7 @@ public abstract class TestBase {
         LOGGER.info("|          Open Selenium Web Driver ");
         LOGGER.info("===============================================================\n");
         if (driver == null) {
-            driver = WebDriverConfig.getWebDriver(Browser.CHROME);
+            driver = WebDriverConfig.getWebDriver(Browser.FIREFOX);
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(150, TimeUnit.MILLISECONDS);
 
